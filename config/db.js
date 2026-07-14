@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb+srv://tammirsidevika05_db_user:<db_password>@cluster0.7ywegpc.mongodb.net/?appName=Cluster0");
+        await mongoose.connect("mongodb+srv://prasannapalaparthi880_db_user:pSQBq6yNyP0hFmY7@cluster0.al2sdtf.mongodb.net/");
 
         console.log("Database Connected Successfully");
     } catch (error) {
