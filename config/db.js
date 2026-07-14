@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
-const dns=require("dns")
-dns.setServer(["8.8.8.8","8.8.4.4"])
+
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb+srv://tammirsidevika05_db_user:<db_password>@cluster0.7ywegpc.mongodb.net/?appName=Cluster0");
+        await mongoose.connect("mongodb://127.0.0.1:27017/courseTrackerDB");
 
         console.log("Database Connected Successfully");
     } catch (error) {
